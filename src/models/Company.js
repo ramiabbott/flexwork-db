@@ -41,9 +41,9 @@ module.exports = (sequelize) => {
       defaultValue: "",
     },
     search_status: {
-      type: DataTypes.STRING,
+      type: DataTypes.ENUM("Active", "Inactive", "Pending"),
       allowNull: false,
-      defaultValue: "",
+      defaultValue: "Pending",
     },
     about_me: {
       type: DataTypes.STRING,
